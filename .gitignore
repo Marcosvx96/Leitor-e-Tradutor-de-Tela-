@@ -1,0 +1,27 @@
+# Ambiente e cache Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Dados locais e arquivos gerados em disco
+dados/
+*.mp3
+referencias/
+
+# Artefatos de build do instalador
+build/
+dist/
+*.spec
+instalador/Output/
+
+# Atalho local da máquina de desenvolvimento
+*.lnk
+
+# Documentação de bastidores (não faz parte do repositório)
+CONTEXTO.md
+METODOLOGIA.md
+
+# Diversos
+*.log
+*.tmp
