@@ -97,10 +97,11 @@ def main() -> None:
 
     ffmpeg = localizar_ffmpeg()
     print(f"ffmpeg: {ffmpeg}")
-    destinos = [DIST / "ffmpeg.exe", DIST / "_internal" / "ffmpeg.exe"]
-    for destino in destinos:
-        if destino.parent.is_dir():
-            shutil.copy2(ffmpeg, destino)
+    # O app resolve __file__ dentro de _internal e procura o ffmpeg ao lado do
+    # pacote, então uma única cópia nessa pasta é suficiente.
+    interno = DIST / "_internal"
+    destino = interno / "ffmpeg.exe" if interno.is_dir() else DIST / "ffmpeg.exe"
+    shutil.copy2(ffmpeg, destino)
     shutil.copy2(RAIZ / "icone.ico", DIST / "icone.ico")
 
     executar([localizar_iscc(), ISS])
