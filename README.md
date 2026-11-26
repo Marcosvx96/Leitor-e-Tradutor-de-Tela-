@@ -4,6 +4,8 @@ Aplicativo Windows inspirado no fluxo do [MORT](https://github.com/kmonkeyhead/M
 
 A seleção funciona como o **Marquee Selection do Windows**: você arrasta um retângulo - com **preenchimento azul translúcido**, **contorno azul sólido + tracejado branco animado ("formigas andando")**, **guias amarelas no cursor** e uma **etiqueta que acompanha o mouse com X/Y e tamanho em tempo real** - e **solta o mouse para ler** (como no MORT). O escurecimento fora da área é leve, para o texto continuar legível enquanto você escolhe. A **lupa de zoom fica fixa no canto superior direito** e pode ser removida ou redimensionada. Também é possível mover/redimensionar as alças e confirmar com `Enter`. A janela de controle é um painel em cartões, com acento azul do Windows 11 e **cantos arredondados de verdade na própria janela**, além da sombra.
 
+![Janela principal do Leitor em Voz Alta](docs/screenshots/janela-principal.png)
+
 ## O que ele faz
 
 - **Overlay** transparente para desenhar a região no estilo **marquee do Windows** (azul translúcido, borda tracejada animada, guias no cursor e etiqueta de posição/tamanho em tempo real), com **lupa 2x opcional no canto superior direito**. Cor, opacidade e tamanho da lupa são configuráveis na aba **Seleção**.
@@ -35,7 +37,7 @@ Para rodar a partir do código:
 
 ## Instalação
 
-Baixe `LeitorVozAlta-Setup.exe` e dê dois cliques. O instalador:
+Baixe o instalador na última versão publicada: **[LeitorVozAlta-Setup.exe](https://github.com/Marcosvx96/Leitor-e-Tradutor-de-Tela-/releases/latest/download/LeitorVozAlta-Setup.exe)** (ou em **[Releases](https://github.com/Marcosvx96/Leitor-e-Tradutor-de-Tela-/releases)**) e dê dois cliques. O instalador:
 
 - instala o aplicativo e o `ffmpeg` em `%LOCALAPPDATA%\Programs\Leitor em Voz Alta`;
 - cria o atalho no Menu Iniciar e, se você marcara a opção, na Área de Trabalho;
