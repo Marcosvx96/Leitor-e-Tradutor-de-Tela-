@@ -6,6 +6,8 @@ A seleção funciona como o **Marquee Selection do Windows**: você arrasta um r
 
 ![Janela principal do Leitor em Voz Alta](docs/screenshots/janela-principal.png)
 
+**Autor:** [Marcosvx96](https://github.com/Marcosvx96)
+
 ## O que ele faz
 
 - **Overlay** transparente para desenhar a região no estilo **marquee do Windows** (azul translúcido, borda tracejada animada, guias no cursor e etiqueta de posição/tamanho em tempo real), com **lupa 2x opcional no canto superior direito**. Cor, opacidade e tamanho da lupa são configuráveis na aba **Seleção**.
@@ -203,3 +205,9 @@ O script confirma idiomas de OCR, vozes disponíveis, tradução (en → pt) e f
 - **A voz neural demora ou falha**: o primeiro som costuma começar em 1–2 s; a leitura segue em fluxo contínuo. A reprodução neural contínua usa `ffmpeg` (já presente neste computador) e `sounddevice`; se faltar, o app avisa e cai para a voz SAPI local (Maria/Zira). Para garantir offline, selecione uma voz SAPI na lista.
 - **A tradução falha**: ela precisa de internet (MyMemory/Google); o OCR e a detecção de idioma continuam funcionando offline.
 - **Seleção não aparece**: some a janela principal e use `Ctrl+Shift+S`; em alguns apps em tela cheia, use o modo de janela/borderless.
+
+## Autor e licença
+
+Projeto criado e mantido por **Marcosvx96**.
+
+O código-fonte e os arquivos deste repositório são de propriedade exclusiva do autor. É proibido copiar, modificar, distribuir ou usar o código para criar outro aplicativo sem autorização prévia por escrito. O uso gratuito do aplicativo instalado continua permitido. Leia o arquivo [LICENSE](LICENSE) para os termos completos.
